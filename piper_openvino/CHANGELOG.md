@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.1
+
+- Use a unique Wyoming Zeroconf name so Piper OpenVINO can run beside the stock Piper app during migration testing.
+
 ## 2.2.2
 
 - Upgrade to `wyoming-piper` 2.2.2 (wheel fix)

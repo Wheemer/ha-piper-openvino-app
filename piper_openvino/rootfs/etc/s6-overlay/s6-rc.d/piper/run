@@ -30,7 +30,7 @@ done
 # shellcheck disable=SC2068
 exec python3 -m wyoming_piper \
     --uri 'tcp://0.0.0.0:10200' \
-    --zeroconf \
+    --zeroconf 'piper-openvino' \
     --length-scale "$(bashio::config 'length_scale')" \
     --noise-scale "$(bashio::config 'noise_scale')" \
     --noise-w "$(bashio::config 'noise_w')" \
