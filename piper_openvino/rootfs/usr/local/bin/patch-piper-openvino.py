@@ -59,7 +59,7 @@ def main() -> None:
             return
 
         if "import os" not in text:
-            text = text.replace("import json\\n", "import json\\nimport os\\n", 1)
+            text = text.replace("import json\n", "import json\nimport os\n", 1)
 
         if OLD not in text:
             raise RuntimeError(f"Provider block not found in {voice_py}")
