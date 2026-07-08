@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.2
+
+- Fix the OpenVINO provider patch so `import os` is added before reading provider environment variables.
+
 ## 0.1.1
 
 - Use a unique Wyoming Zeroconf name so Piper OpenVINO can run beside the stock Piper app during migration testing.
