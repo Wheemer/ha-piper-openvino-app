@@ -13,7 +13,9 @@ COPY rootfs /
 RUN \
     apt-get update \
     && apt-get install -y --no-install-recommends \
+        intel-opencl-icd \
         netcat-traditional \
+        ocl-icd-libopencl1 \
         python3 \
         python3-pip \
     \
@@ -26,7 +28,8 @@ RUN \
         "wyoming-piper[zeroconf,zh] @ https://github.com/rhasspy/wyoming-piper/archive/refs/tags/v${WYOMING_PIPER_VERSION}.tar.gz" \
     && pip3 uninstall -y onnxruntime \
     && pip3 install --no-cache-dir \
-        onnxruntime-openvino==1.24.1 \
+        "numpy<3" \
+        onnxruntime-openvino==1.23.0 \
     && python3 /usr/local/bin/patch-piper-openvino.py \
     \
     && rm -rf /var/lib/apt/lists/*

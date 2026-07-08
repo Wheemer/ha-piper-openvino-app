@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.3
+
+- Install the Intel OpenCL runtime needed for HD Graphics 630 GPU detection.
+- Pin `onnxruntime-openvino` to 1.23.0, which initializes the Piper ONNX model on this Gen9 GPU.
+
 ## 0.1.2
 
 - Fix the OpenVINO provider patch so `import os` is added before reading provider environment variables.

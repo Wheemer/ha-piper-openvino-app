@@ -1,5 +1,5 @@
 ---
-version: 0.1.2
+version: 0.1.3
 slug: piper_openvino
 name: Piper OpenVINO
 description: Text-to-speech with Piper using Intel OpenVINO acceleration
