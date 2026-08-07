@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.4
+
+- Upgrade `wyoming-piper` from 2.2.2 to 2.3.1.
+- Upgrade `onnxruntime-openvino` from 1.23.0 to 1.24.1.
+
 ## 0.1.3
 
 - Install the Intel OpenCL runtime needed for HD Graphics 630 GPU detection.

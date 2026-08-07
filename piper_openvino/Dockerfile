@@ -7,7 +7,7 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 # Install Piper
 WORKDIR /usr/src
 ARG BUILD_ARCH
-ARG WYOMING_PIPER_VERSION=2.2.2
+ARG WYOMING_PIPER_VERSION=2.3.1
 ENV PIP_BREAK_SYSTEM_PACKAGES=1
 COPY rootfs /
 RUN \
@@ -29,7 +29,7 @@ RUN \
     && pip3 uninstall -y onnxruntime \
     && pip3 install --no-cache-dir \
         "numpy<3" \
-        onnxruntime-openvino==1.23.0 \
+        onnxruntime-openvino==1.24.1 \
     && python3 /usr/local/bin/patch-piper-openvino.py \
     \
     && rm -rf /var/lib/apt/lists/*
