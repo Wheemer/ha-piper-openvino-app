@@ -7,7 +7,7 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 # Install Piper
 WORKDIR /usr/src
 ARG BUILD_ARCH
-ARG WYOMING_PIPER_VERSION=2.3.1
+ARG WYOMING_PIPER_VERSION=2.4.2
 ENV PIP_BREAK_SYSTEM_PACKAGES=1
 COPY rootfs /
 RUN \

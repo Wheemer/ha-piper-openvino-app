@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.6
+
+- wyoming-piper 2.3.1 -> 2.4.2.
+
 ## 0.1.5
 
 - Promote the tested app metadata from experimental to stable.
