@@ -28,7 +28,7 @@ jobs:
           docker build \
             --build-arg BUILD_ARCH=amd64 \
             --build-arg BUILD_VERSION="${{ steps.update.outputs.version }}" \
-            --build-arg BUILD_NAME="Piper OpenVINO" \
+            --build-arg BUILD_NAME="Piper for Intel OpenVINO" \
             --build-arg BUILD_DESCRIPTION="Piper text-to-speech with Intel OpenVINO acceleration" \
             --build-arg BUILD_REPOSITORY="${{ github.repository }}" \
             --build-arg BUILD_REF="${{ github.sha }}" \

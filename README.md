@@ -7,7 +7,7 @@
 [![Publish](https://img.shields.io/github/actions/workflow/status/Wheemer/ha-piper-openvino-app/publish.yml?style=for-the-badge&label=BUILD&labelColor=555555)](https://github.com/Wheemer/ha-piper-openvino-app/actions/workflows/publish.yml)
 
 Piper for Intel OpenVINO provides private, local text-to-speech through the Wyoming
-protocol. It is based on [`wyoming-piper`](https://github.com/rhasspy/wyoming-piper)
+protocol. It is based on [`wyoming-piper`](https://github.com/OHF-Voice/wyoming-piper)
 and replaces its CPU ONNX runtime with the OpenVINO execution provider for Intel
 integrated graphics.
 
@@ -86,5 +86,5 @@ The OpenVINO compatibility patch lives in
 ## Upstream
 
 - [Home Assistant Piper app](https://github.com/home-assistant/addons/tree/master/piper)
-- [Wyoming Piper](https://github.com/rhasspy/wyoming-piper)
+- [Wyoming Piper](https://github.com/OHF-Voice/wyoming-piper)
 - [ONNX Runtime OpenVINO](https://pypi.org/project/onnxruntime-openvino/)

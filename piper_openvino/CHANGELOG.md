@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.7
+
+- Upgrade Wyoming Piper from 2.3.1 to 2.4.2.
+- Move the Home Assistant Debian base from Bookworm to Trixie.
+- Keep onnxruntime-openvino at its current published version, 1.24.1.
+
 ## 0.1.6
 
 - Rename the app to Piper for Intel OpenVINO for consistent accelerator naming.

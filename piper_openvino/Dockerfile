@@ -1,4 +1,4 @@
-ARG BUILD_FROM=ghcr.io/home-assistant/amd64-base-debian:bookworm
+ARG BUILD_FROM=ghcr.io/home-assistant/amd64-base-debian:trixie
 FROM ${BUILD_FROM}
 
 # Set shell
@@ -7,7 +7,7 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 # Install Piper
 WORKDIR /usr/src
 ARG BUILD_ARCH
-ARG WYOMING_PIPER_VERSION=2.3.1
+ARG WYOMING_PIPER_VERSION=2.4.2
 ENV PIP_BREAK_SYSTEM_PACKAGES=1
 COPY rootfs /
 RUN \
@@ -25,7 +25,7 @@ RUN \
     && pip3 install --no-cache-dir \
         --extra-index-url https://www.piwheels.org/simple \
         --extra-index-url https://download.pytorch.org/whl/cpu \
-        "wyoming-piper[zeroconf,zh] @ https://github.com/rhasspy/wyoming-piper/archive/refs/tags/v${WYOMING_PIPER_VERSION}.tar.gz" \
+        "wyoming-piper[zeroconf,zh] @ https://github.com/OHF-Voice/wyoming-piper/archive/refs/tags/v${WYOMING_PIPER_VERSION}.tar.gz" \
     && pip3 uninstall -y onnxruntime \
     && pip3 install --no-cache-dir \
         "numpy<3" \

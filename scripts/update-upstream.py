@@ -43,7 +43,7 @@ def bump_app_version() -> str:
 dockerfile = DOCKERFILE.read_text(encoding="utf-8")
 changes: list[str] = []
 
-tags = read_json("https://api.github.com/repos/rhasspy/wyoming-piper/tags?per_page=100")
+tags = read_json("https://api.github.com/repos/OHF-Voice/wyoming-piper/tags?per_page=100")
 stable_tags = [item["name"] for item in tags if version_tuple(item["name"])]
 latest_piper = max(stable_tags, key=version_tuple).lstrip("v")
 current_piper = re.search(r"^ARG WYOMING_PIPER_VERSION=(\S+)$", dockerfile, re.MULTILINE).group(1)
