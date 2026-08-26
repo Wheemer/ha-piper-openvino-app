@@ -69,22 +69,5 @@ excluded from app backups where the file pattern applies.
 
 ## Updates
 
-GitHub checks `wyoming-piper`, `onnxruntime-openvino`, base images, and workflow
-actions every week. Proposed updates are built on a GitHub-hosted runner and opened
-as pull requests. Merging a reviewed update publishes a new GHCR image; installing
-that update in Home Assistant remains manual.
-
-## Development
-
-The prebuilt image is published as
-`ghcr.io/wheemer/amd64-app-piper-openvino:<version>`.
-
-The OpenVINO compatibility patch lives in
-`piper_openvino/rootfs/usr/local/bin/patch-piper-openvino.py`. Keep the version in
-`piper_openvino/config.yaml` matched to the image tag.
-
-## Upstream
-
-- [Home Assistant Piper app](https://github.com/home-assistant/addons/tree/master/piper)
-- [Wyoming Piper](https://github.com/OHF-Voice/wyoming-piper)
-- [ONNX Runtime OpenVINO](https://pypi.org/project/onnxruntime-openvino/)
+Tracked upstream releases are test-built, published, and merged automatically.
+Home Assistant installs new app versions when automatic updates are enabled.
