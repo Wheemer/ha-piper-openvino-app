@@ -38,7 +38,7 @@ RUN \
     && apt-get install -y --no-install-recommends ./*.deb \
     && cd /usr/src \
     \
-    && pip3 install --no-cache-dir -U \
+    && pip3 install --no-cache-dir --ignore-installed -U \
         setuptools \
         wheel \
     && pip3 install --no-cache-dir \
