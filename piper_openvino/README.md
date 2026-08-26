@@ -1,4 +1,4 @@
-# Piper OpenVINO
+# Piper for Intel OpenVINO
 
 Local Wyoming text-to-speech for Home Assistant Assist using Piper and the
 ONNX Runtime OpenVINO execution provider.
@@ -11,10 +11,10 @@ ONNX Runtime OpenVINO execution provider.
 
 ## Setup
 
-1. Install the **Piper OpenVINO** app.
+1. Install the **Piper for Intel OpenVINO** app.
 2. Choose a voice, leave `openvino_device` set to `GPU`, save, and start the app.
 3. Wait for the voice download to finish.
-4. Add the discovered Piper OpenVINO service under **Settings > Devices & services**.
+4. Add the discovered Piper for Intel OpenVINO service under **Settings > Devices & services**.
 5. Select its text-to-speech entity in **Settings > Voice assistants**.
 
 The Wyoming endpoint listens on port `10200`. Discovery works internally. For

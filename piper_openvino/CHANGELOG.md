@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.6
+
+- Rename the app to Piper for Intel OpenVINO for consistent accelerator naming.
+
 ## 0.1.5
 
 - Promote the tested app metadata from experimental to stable.

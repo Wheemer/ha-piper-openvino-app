@@ -1,4 +1,4 @@
-# Piper OpenVINO
+# Piper for Intel OpenVINO
 ### GPU-accelerated local text-to-speech for Home Assistant Assist
 
 [![Home Assistant App](https://img.shields.io/badge/HOME%20ASSISTANT-APP-41BDF5?style=for-the-badge&logo=home-assistant&logoColor=white&labelColor=555555)](https://www.home-assistant.io/apps/)
@@ -6,7 +6,7 @@
 [![Latest release](https://img.shields.io/github/v/release/Wheemer/ha-piper-openvino-app?style=for-the-badge&logo=github&logoColor=white&label=RELEASE&labelColor=555555&color=22C55E)](https://github.com/Wheemer/ha-piper-openvino-app/releases/latest)
 [![Publish](https://img.shields.io/github/actions/workflow/status/Wheemer/ha-piper-openvino-app/publish.yml?style=for-the-badge&label=BUILD&labelColor=555555)](https://github.com/Wheemer/ha-piper-openvino-app/actions/workflows/publish.yml)
 
-Piper OpenVINO provides private, local text-to-speech through the Wyoming
+Piper for Intel OpenVINO provides private, local text-to-speech through the Wyoming
 protocol. It is based on [`wyoming-piper`](https://github.com/rhasspy/wyoming-piper)
 and replaces its CPU ONNX runtime with the OpenVINO execution provider for Intel
 integrated graphics.
@@ -27,14 +27,14 @@ Home Assistant machine.
 
 1. Select the button above, or open **Settings > Apps > App store > Repositories**.
 2. Add `https://github.com/Wheemer/ha-piper-openvino-app`.
-3. Install **Piper OpenVINO** from the app store.
+3. Install **Piper for Intel OpenVINO** from the app store.
 4. Open **Configuration**, choose a voice, and leave **OpenVINO device** set to `GPU`.
 5. Start the app and wait for the selected voice to download.
 
 ## Connect Home Assistant
 
 The app advertises itself through Wyoming discovery. Open **Settings > Devices &
-services** and add the discovered **Piper OpenVINO** service. If discovery is
+services** and add the discovered **Piper for Intel OpenVINO** service. If discovery is
 unavailable, assign host port `10200` on the app's **Network** panel and add the
 Wyoming integration using the Home Assistant host address and port `10200`.
 
