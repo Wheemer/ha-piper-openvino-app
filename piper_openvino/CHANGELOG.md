@@ -5,6 +5,7 @@
 - Upgrade Wyoming Piper from 2.3.1 to 2.4.2.
 - Move the Home Assistant Debian base from Bookworm to Trixie.
 - Keep onnxruntime-openvino at its current published version, 1.24.1.
+- Install Intel's Gen9 `legacy1` compute runtime for HD Graphics 630 support.
 
 ## 0.1.6
 
