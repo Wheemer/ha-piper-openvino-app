@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.5
+
+- Promote the tested app metadata from experimental to stable.
+- Add automated upstream dependency checks and cloud build validation.
+
 ## 0.1.4
 
 - Upgrade `wyoming-piper` from 2.2.2 to 2.3.1.
