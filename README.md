@@ -1,10 +1,18 @@
+<div align="center">
+
+<img src="piper_openvino/logo.png" width="112" alt="Piper logo">
+
 # Piper for Intel OpenVINO
-### GPU-accelerated local text-to-speech for Home Assistant Assist
+
+### Local text-to-speech for Home Assistant Assist, accelerated by Intel OpenVINO
 
 [![Home Assistant App](https://img.shields.io/badge/HOME%20ASSISTANT-APP-41BDF5?style=for-the-badge&logo=home-assistant&logoColor=white&labelColor=555555)](https://www.home-assistant.io/apps/)
+[![Intel OpenVINO](https://img.shields.io/badge/INTEL-OPENVINO-0071C5?style=for-the-badge&logo=intel&logoColor=white&labelColor=555555)](https://www.intel.com/content/www/us/en/developer/tools/openvino-toolkit/overview.html)
 [![AMD64](https://img.shields.io/badge/AMD64-SUPPORTED-22C55E?style=for-the-badge&labelColor=555555)](https://github.com/Wheemer/ha-piper-openvino-app)
 [![Latest release](https://img.shields.io/github/v/release/Wheemer/ha-piper-openvino-app?style=for-the-badge&logo=github&logoColor=white&label=RELEASE&labelColor=555555&color=22C55E)](https://github.com/Wheemer/ha-piper-openvino-app/releases/latest)
 [![Build](https://img.shields.io/github/actions/workflow/status/Wheemer/ha-piper-openvino-app/quality.yml?branch=main&style=for-the-badge&label=BUILD&labelColor=555555)](https://github.com/Wheemer/ha-piper-openvino-app/actions/workflows/quality.yml)
+
+</div>
 
 Piper for Intel OpenVINO provides private, local text-to-speech through the Wyoming
 protocol. It is based on [`wyoming-piper`](https://github.com/OHF-Voice/wyoming-piper)
