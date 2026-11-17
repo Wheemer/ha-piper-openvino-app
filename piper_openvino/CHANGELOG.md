@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.11
+
+- wyoming-piper 2.5.3 -> 2.5.4.
+
 ## 0.1.10
 
 - wyoming-piper 2.5.2 -> 2.5.3.
